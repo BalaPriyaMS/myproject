@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <!--head add box-->
+      <section>
+        <head>
+          <div class="addcondainer">
+            <input class="addbar" for="text" placeholder="Add a new task" />
+            <button class="addbtn">add</button>
+          </div>
+        </head>
+      </section>
+      <!--head end-->
+      <!--content-->
+      <section>
+        <!--nav-->
+        <div class="nav">
+          <nav>
+            <a class="navlink" id="alllist" href="">All</a>
+            <a class="navlink" id="pendinglist" href="">Pending</a>
+            <a class="navlink" id="Completed" href="">Completed</a>
+            <button class="clearbtn">Clear All</button>
+          </nav>
+        </div>
+        <hr />
+        <!--nav end-->
+        <!--list-->
+        <section class="list">
+          <div class="item">
+            <input type="checkbox" class="pendingitem" /> item
+            <button class="delete">delete</button>
+          </div>
+          <hr />
+        </section>
+        <section class="list" id="pending">
+          <div class="item">
+            <input type="checkbox" class="pendingitem" /> item
+            <button class="delete">delete</button>
+          </div>
+        </section>
+        <section class="list" id="Completed">
+          <div class="item">
+            <input type="checkbox" class="pendingitem" /> item
+            <button class="delete">delete</button>
+          </div>
+        </section>
+        <!--list end-->
+      </section>
+      <!--content end-->
+    </section>
+    <!--container end-->
+    <script src="script.js"></script>
+  </body>
+</html>
